@@ -1,0 +1,39 @@
+O programa é uma ferramenta computacional
+desenvolvida com o software Matlab de planejamento de redes de distribuição.
+
+Para tal foi feita a análise da disponibilidade e de energia,
+mediante sete alternativas de configuração da rede elétrica UFSC 16
+barras, com diferentes equipamentos de proteção, através do
+simulador do modelo de Markov contínuo, e assim poder escolher a
+alternativa mais econômica e eficiente.
+
+O código permite definir o coeficiente de variação,
+qual a alternativa pretende-se obter a simulação, e um arquivo de base de dados.
+ 
+Nesse repositório estão disponibilizados:
+- arquivo do código principal
+- arquivo base de dados
+- arquivo das alternativas
+
+O arquivo 'ufsc.m' foi utilizado para fazer a simulação
+O arquivo deve conter os comprimentos de cada linha de distribuição,
+o número de consumidores ligados a cada fase de cada linha,
+a potência acumulada de cada fase de cada linha, e
+os MTTR(mean time to repair), ou tempo médio de restabelecimento dos componentes(linhas)
+
+Para as concessionárias e distribuidoras é interessante um
+configurador de rede para conseguir utilizar a ferramenta para
+qualquer ampliação da rede que pretende-se efetivar.
+
+O código utilizou o modelo de simulador de Markov contínuo. O
+modelo mapeia os estados dos estados, e calcula o tempo que os
+componentes ficarão nesse estado. O próximo componente a transitar
+de estado, é o que tiver o menor tempo calculado. O simulador
+avança componente por componente até que todos os componentes do
+vetor de tempos alcancem o número de horas de um ano.
+
+Diante dos índices de disponibilidade, torna-se possível
+calcular os custos ano a ano de reparo devido às falhas permanentes
+e transitórias no sistema. Foi feita modelagem dos equipamentos da rede para tal.
+
+
