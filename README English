@@ -1,0 +1,19 @@
+# Ferramenta-Matlab-PlanejamentoRedesdeDistribui-o
+The program was developed in MATLAB. It evaluates the effects of different configurations of a 16 node distribution grid. 
+
+The program allows the user define variance coefficient,
+the distribution grid configuration and the file with data base.
+
+The data base should have, in the same organization, as the one in ufsc.m:
+
+- Length of the distribution lines
+- Number of consumers connected with each phase
+- Load values of each phase
+- Mean times to repair(MTTR) of each configuration for permanent and transitory faults.
+
+The program uses the continuos Markov chain to map the state of the components,
+and calculates the down and up times. 
+The simulator goes on till every component reachs one year of simulation.
+With disponibility indexes, its possible to calculate the costs year-by-year,
+due to transitory and permanent faults.
+To do that all the equipments were modeled.
