@@ -1,4 +1,4 @@
-%                                     consumidores acomulados(Nº)     potencia acumulados(KW)
+%                                     consumidores acomulados(NÂº)     potencia acumulados(KW)
 %Componente De Para Length [km] Ph-A Ph-B Ph-C Ph-A Ph-B Ph-C
 distancias =[1   1 2 2 674 791 687 365 388 329.5;
              2   2 3 3 674 746 687 365 375.5 329.5;
